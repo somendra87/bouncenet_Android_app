@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    >
+
+    <ImageView
+        android:id="@+id/brandLogo"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bouncenet_logo_no_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!--App Name-->
+    <TextView
+        android:id="@+id/txtAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="BounceNet"
+        android:textAllCaps="true"
+        android:textColor="@color/brand_blue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/brandLogo"
+        app:layout_constraintTop_toTopOf="@id/brandLogo"
+        />
+
+    <!--Tag Line-->
+    <TextView
+        android:id="@+id/txtTagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From Setback To Comeback"
+        android:textColor="@color/text_secondary"
+        android:textSize="10sp"
+        android:letterSpacing="0.08"
+        app:layout_constraintStart_toStartOf="@+id/txtAppName"
+        app:layout_constraintTop_toBottomOf="@+id/txtAppName"
+        />
+
+    <!-- Search Icon -->
+    <ImageView
+        android:id="@+id/imgSearch"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/search_24dp_filled"
+        app:layout_constraintEnd_toStartOf="@+id/notificationContainer"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <!--Notification-->
+    <FrameLayout
+        android:id="@+id/notificationContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toStartOf="@id/imgProfile"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/outline_notifications_24"
+            />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="top|end"
+            android:background="@drawable/bg_notification_badge"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="7sp"
+            android:textStyle="bold"/>
+
+    </FrameLayout>
+
+    <!--Profile-->
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_card"
+        android:padding="6dp"
+        android:src="@drawable/account_circle_24dp_filled"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

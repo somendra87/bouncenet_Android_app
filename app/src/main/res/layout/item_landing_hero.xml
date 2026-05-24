@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/landingHeroItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:background="@color/hero_bg"
+    android:padding="24dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/heroLabelCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/white"
+        android:padding="24dp"
+        app:cardCornerRadius="15dp"
+        android:elevation="3dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="12dp"
+            android:paddingTop="12dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="12dp"
+            >
+        <TextView
+            android:id="@+id/txtHeroLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:letterSpacing="0.1"
+            android:text="♥️ A COMMUNITY THAT STANDS WITH YOU"
+            android:textColor="@color/brand_blue"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/txtHeroTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="From Setback\nTo Comeback."
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:lineSpacingExtra="4dp"
+        android:textColor="@color/primary_blue"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/heroLabelCard"
+        />
+
+    <TextView
+        android:id="@+id/txtHeroSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BounceNet is a community-powered platform that provides financial support, career opportunities, and skill development."
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="#4B5563"
+        app:layout_constraintTop_toBottomOf="@id/txtHeroTitle"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnJoinHero"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        app:cornerRadius="12dp"
+        android:elevation="6dp"
+        android:text="Join BounceNet →"
+        android:backgroundTint="@color/primary_blue"
+        app:layout_constraintTop_toBottomOf="@id/txtHeroSubTitle"
+        />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/seeHowItWorksHero"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:elevation="6dp"
+        android:text=" See how it works ＞"
+        android:textColor="@color/text_primary"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        app:cornerRadius="10dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/btnJoinHero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

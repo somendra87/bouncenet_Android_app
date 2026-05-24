@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary -->
+    <color name="primary_blue">#1E3A8A</color>
+    <color name="primary_blue_dark">#172554</color>
+
+    <!-- Accent -->
+    <color name="accent_orange">#F97316</color>
+
+    <!-- Success -->
+    <color name="success_green">#16A34A</color>
+
+    <!-- Purple -->
+    <color name="soft_purple">#9333EA</color>
+
+    <!-- Backgrounds -->
+    <color name="screen_background">#F5F7FA</color>
+    <color name="card_background">#FFFFFF</color>
+
+    <!-- Premium -->
+    <color name="premium_navy">#111827</color>
+
+    <!-- White / Black -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="feature_green">#16A34A</color>
+    <color name="feature_green_bg">#EEF7F0</color>
+    <color name="feature_blue">#2563EB</color>
+    <color name="feature_blue_bg">#EEF4FF</color>
+    <color name="feature_orange">#EA580C</color>
+    <color name="feature_orange_bg">#FFF7ED</color>
+    <color name="feature_purple">#9333EA</color>
+    <color name="feature_purple_bg">#F6EEFF</color>
+
+    <!--Brand Logo Color-->
+    <color name="brand_blue">#0A3D91</color>
+    <color name="brand_gold">#F4B400</color>
+    <color name="stroke_color">#EEF2F7</color>
+    <color name="track_color">#E8EDF5</color>
+
+    <!--Premium Upgrade Card Colors-->
+    <color name="premium_card_background">#172440</color>
+    <color name="premium_orange">#FF8A1F</color>
+    <color name="premium_text">#D5D9E2</color>
+
+    <color name="hero_bg">#F0F7FF</color>
+
+    <!--Colors gradient -->
+    <!-- Primary Colors from the image -->
+    <color name="learn_grow">#0B1242</color>
+
+    <!-- Bounce gradient colors -->
+    <color name="bounce_blue_start">#3145C9</color>
+    <color name="bounce_blue_mid">#7280D6</color>
+    <color name="bounce_purple">#83709B</color>
+
+    <!-- Forward orange -->
+    <color name="forward_orange">#EF8436</color>
+    <color name="forward_orange_dark">#E39155</color>
+
+    <!-- Supporting colors -->
+    <color name="navy_dark">#0B1242</color>
+    <color name="navy_medium">#3E4160</color>
+    <color name="gray_light">#9EA1B3</color>
+
+
+    !-- Primary Brand Colors -->
+    <color name="primary">#0052CC</color>                    <!-- BounceNet Blue -->
+    <color name="primary_variant">#0039A1</color>
+    <color name="secondary">#FF6B00</color>                 <!-- Orange Accent -->
+    <color name="secondary_variant">#E55A00</color>
+
+    <!-- Backgrounds -->
+    <color name="background_light">#F8FAFC</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="background_surface">#F5F7FA</color>
+
+    <!-- Text Colors -->
+    <color name="text_tertiary">#9CA3AF</color>
+    <color name="text_on_primary">#FFFFFF</color>
+
+    <!-- Status / Accent -->
+    <color name="success">#00C853</color>
+    <color name="warning">#FF6B00</color>                   <!-- Orange -->
+    <color name="error">#EF4444</color>
+
+    <!-- Neutral Grays -->
+    <color name="grey_50">#F9FAFB</color>
+    <color name="grey_100">#F3F4F6</color>
+    <color name="grey_200">#E5E7EB</color>
+    <color name="grey_300">#D1D5DB</color>
+    <color name="grey_400">#9CA3AF</color>
+    <color name="grey_500">#6B7280</color>
+    <color name="grey_600">#4B5563</color>
+    <color name="grey_700">#374151</color>
+
+    <!-- Button Specific -->
+    <color name="button_google">#FFFFFF</color>
+    <color name="button_google_stroke">#DADCE0</color>
+
+    <!-- Password Strength -->
+    <color name="password_medium">#FF6B00</color>
+    <color name="password_good">#22C55F</color>
+    <color name="password_strong">#10B981</color>
+
+    <!-- Others -->
+    <color name="divider">#E5E7EB</color>
+    <color name="ripple">#0A000000</color>
+
+
+    <!-- ================================================= -->
+    <!-- BRAND -->
+    <!-- ================================================= -->
+
+    <color name="brand_primary">#1E3A8A</color>
+    <color name="brand_primary_dark">#172554</color>
+    <color name="brand_secondary">#F97316</color>
+
+    <!-- ================================================= -->
+    <!-- TEXT -->
+    <!-- ================================================= -->
+
+    <color name="text_primary">#111827</color>
+    <color name="text_secondary">#6B7280</color>
+
+    <color name="border_light">#E5E7EB</color>
+
+    <color name="dark_green">#06402B</color>
+    <color name="dark_green_1">#008000</color>
+
+    <!--plan Colors-->
+    <!-- Plan Colors -->
+    <color name="silver_plan">#64748B</color>
+    <color name="gold_plan">#F59E0B</color>
+    <color name="diamond_plan">#7C3AED</color>
+
+    <color name="green_success">#10B981</color>
+    <color name="card_border">#E5E7EB</color>
+
+    <color name="silver_plan_bg">#F1F5F9</color>
+    <color name="gold_plan_bg">#FFF7ED</color>
+    <color name="diamond_plan_bg">#F5F3FF</color>
+
+    <color name="light_blue_bg">#EFF6FF</color>
+
+</resources>

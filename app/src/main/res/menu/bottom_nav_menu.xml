@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Home"
+        android:icon="@drawable/ic_home_24dp"
+        android:iconTint="@color/text_secondary"
+        />
+
+    <item
+        android:id="@+id/jobsFragment"
+        android:title="Jobs"
+        android:icon="@drawable/ic_work_filled_rounded"
+        android:iconTint="@color/text_secondary"
+        />
+
+    <item
+        android:id="@+id/learningFragment"
+        android:title="Learning"
+        android:icon="@drawable/ic_learn_24dp"
+        android:iconTint="@color/text_secondary"
+        />
+
+    <item
+        android:id="@+id/fundsFragment"
+        android:title="Fund"
+        android:icon="@drawable/ic_funds_filled_24dp"
+        android:iconTint="@color/text_secondary"
+        />
+
+    <item
+        android:id="@+id/profileFragment"
+        android:title="Profile"
+        android:icon="@drawable/baseline_person_24_filled"
+        android:iconTint="@color/text_secondary"
+        />
+
+</menu>

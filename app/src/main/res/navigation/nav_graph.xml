@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/landingFragment">
+
+    <fragment
+        android:id="@+id/landingFragment"
+        android:name="in.bouncenet.fragments.landing.LandingFragment"
+        android:label="Landing" >
+
+        <action
+            android:id="@+id/action_landing_to_signup"
+            app:destination="@+id/signUpFragment"/>
+
+        <action
+            android:id="@+id/action_landing_to_login"
+            app:destination="@+id/loginFragment"/>
+
+        <action
+            android:id="@+id/action_upgrade_to_plans_page"
+            app:destination="@+id/upgradePlanFragment"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/upgradePlanFragment"
+        android:name="in.bouncenet.fragments.plan.PlanFragment"
+        android:label="Plans Fragment"
+        >
+    </fragment>
+
+    <!--Global to Home-->
+    <action
+        android:id="@+id/action_global_to_home"
+        app:destination="@id/homeFragment"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
+
+    <!--Login Handling-->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="in.bouncenet.fragments.account.LoginFragment"
+        android:label="Login Fragment"
+        >
+    </fragment>
+
+
+    <!--Sign Up handling-->
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="in.bouncenet.fragments.account.SignUpFragment"
+        android:label="SignUp Fragment"
+        >
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="in.bouncenet.fragments.home.HomeFragment"
+        android:label="Home"/>
+
+    <fragment
+        android:id="@+id/jobsFragment"
+        android:name="in.bouncenet.fragments.jobs.JobsFragment"
+        android:label="Jobs"/>
+
+    <fragment
+        android:id="@+id/learningFragment"
+        android:name="in.bouncenet.fragments.learning.LearningFragment"
+        android:label="Learning"/>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="in.bouncenet.fragments.account.ProfileFragment"
+        android:label="Profile"/>
+
+    <fragment
+        android:id="@+id/fundsFragment"
+        android:name="in.bouncenet.fragments.funds.FundsFragment"
+        android:label="Funds"/>
+
+</navigation>

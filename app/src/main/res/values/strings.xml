@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BounceNet</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Sign Up Fragment</string>
+    <string name="profile_percentage">%1$d%%</string>
+    <string name="testimonial_description">BounceNet helped me stay afloat financially and community referral got me my dream job</string>
+    <string name="inviteAndEarnDescriptionText">Share BounceNet with your friends and get 20% off on your next billing cycle.</string>
+</resources>

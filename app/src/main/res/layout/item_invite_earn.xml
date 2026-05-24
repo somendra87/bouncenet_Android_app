@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="32dp"
+    >
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="24dp"
+        android:elevation="6dp"
+        app:cardBackgroundColor="@color/white"
+        android:background="@drawable/bg_dotted_border"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        >
+
+        <!--Invite and Earn Icon Container-->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/inviteAndEarnIconContainer"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            app:cardCornerRadius="28dp"
+            app:cardBackgroundColor="@color/light_blue_bg"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:strokeWidth="0dp"
+            >
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_circle_dollar_24_dp"
+                android:layout_gravity="center"
+                app:tint="@color/primary"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!--Invite and earn title text-->
+        <TextView
+            android:id="@+id/inviteAndEarnTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invite &amp; Earn"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/inviteAndEarnIconContainer"
+            />
+
+        <!--Invite and Earn Description Text -->
+        <TextView
+            android:id="@+id/inviteAndEarnDescriptionText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/inviteAndEarnTitleText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/inviteAndEarnIconContainer"
+            android:text="@string/inviteAndEarnDescriptionText"
+            android:textColor="@color/text_secondary"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:lineSpacingExtra="4dp"
+            />
+
+        <TextView
+            android:id="@+id/inviteAndEarnReferralLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/inviteAndEarnDescriptionText"
+            app:layout_constraintStart_toEndOf="@id/inviteAndEarnIconContainer"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Get Your Link"
+            android:textColor="@color/primary"
+            android:textStyle="bold"
+            android:drawableEnd="@drawable/ic_arrow_right_alt"
+            android:drawableTint="@color/primary"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

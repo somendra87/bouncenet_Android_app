@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/planCardContainerRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="10dp"
+    android:elevation="8dp"
+    android:background="@drawable/bg_glass_premium"
+    app:strokeWidth="1.5dp"
+    app:strokeColor="@color/card_border"
+    android:clickable="true"
+    android:focusable="true"
+    android:checkable="true"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/planCardContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding = "24dp"
+        >
+
+        <!-- plan Type  -->
+        <TextView
+            android:id="@+id/tvPlanType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GOLD"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:background="@drawable/bg_plan_label"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <!--Popular Badge-->
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipPopular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popular"
+            app:chipIcon="@drawable/icon_star_24"
+            app:chipIconTint="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:chipBackgroundColor="@color/brand_secondary"
+            android:textColor="@color/white"
+            app:chipStrokeWidth="0dp"
+            android:elevation="6dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+        />
+
+        <!--Price-->
+        <TextView
+            android:id="@+id/planPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:text="₹149/mo"
+            app:layout_constraintTop_toBottomOf="@id/tvPlanType"
+            app:layout_constraintStart_toStartOf="parent"
+        />
+
+        <!--Price-->
+        <TextView
+            android:id="@+id/planBillingCycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            android:text="Billed Monthly"
+            app:layout_constraintTop_toBottomOf="@id/planPrice"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <!-- Features RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerPlanFeatures"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:clickable="false"
+            android:focusable="false"
+            app:layout_constraintTop_toBottomOf="@id/planBillingCycle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp" />
+
+        <!--Choose Button-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnChoosePlan"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:text="Choose Plan"
+            android:textSize="16sp"
+            app:cornerRadius="14sp"
+            android:elevation="12dp"
+            android:background="@drawable/bg_glass_premium"
+            app:layout_constraintTop_toBottomOf="@id/recyclerPlanFeatures"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="28dp"
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

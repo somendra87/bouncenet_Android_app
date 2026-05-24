@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Backgrounds: Swap White for Dark Grey -->
+    <color name="white">#1E293B</color>
+    <color name="card_background">#1E293B</color>
+    <color name="screen_background">#0F172A</color>
+
+    <!-- Hero Background: Swap Light Blue for Deep Navy -->
+    <color name="hero_bg">#111827</color>
+
+    <!-- Text: Swap Black for White/Light Grey -->
+    <color name="text_primary">#F8FAFC</color>
+    <color name="text_secondary">#94A3B8</color>
+
+    <!-- Borders: Make them slightly darker/subtle -->
+    <color name="stroke_color">#334155</color>
+
+
+
+</resources>
